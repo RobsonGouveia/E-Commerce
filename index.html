@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioAtividade1</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Meu Portfólio - Atividade 1</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mim">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <img src="img/avatar.png" class="rounded-circle mb-3" alt="Foto de perfil" width="275">
+            <h1>Olá, eu sou o Robson</h1>
+            <p class="lead">Desenvolvedor Python</p>
+        </div>
+    </section>
+
+    <section id="sobre-mim" class="py-5">
+        <div class="container">
+            <h2 class="text-center" style="margin-top:50px;">Sobre Mim</h2>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img src="img/avatar.png" class="rounded-circle mb-3" alt="Foto de perfil" width="200">
+                </div>
+                <div class="col-lg-8" style="padding: 70px;">
+                    <p>Sou um desenvolvedor Python e trabalho com diversas integrações de sistemas via APIs. Tenho habilidades em diversas tecnologias como Python, Java, JavaScript, C, HTML, CSS, Java, entre outros. Sempre busco aprender e aplicar novas tendências e melhores práticas em meus projetos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center" style="padding-bottom:30px;">Meus Projetos</h2>
+            <div class="row">
+                <!-- Projeto 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/factory-method-mini.png" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 1</h5>
+                            <p class="card-text">Projeto Java para um sistema de lanchonete.</p>
+                            <a href="https://github.com/RobsonGouveia/factory/tree/main" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/vitejs.png" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 2</h5>
+                            <p class="card-text">Projeto de um e-commerce de roupas utilizando Vite e Tailwind.</p>
+                            <a href="#" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/javaSpring.png" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 3</h5>
+                            <p class="card-text">Projeto de um sistema de encomendas utilizando Java Spring Boot.</p>
+                            <a href="#" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Minhas Habilidades</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Java</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%">90%</div>
+                    </div>
+                    <h5>Python</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%">80%</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>JavaScript</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%">70%</div>
+                    </div>
+                    <h5>HTML</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center" style="padding-bottom: 30px;">Contato</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" class="form-control" id="assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-lg-6" style="padding-left: 200px">
+                    <h5>Informações de Contato</h5>
+                    <p>Email: robson.gouveia1020@gmail.com</p>
+                    <p>Telefone: (11) 96756-3043</p>
+                    <p>Siga-me nas redes sociais:</p>
+                    <a href="https://www.linkedin.com/in/robson-gouveia/" class="btn btn-outline-dark btn-sm">LinkedIn</a>
+                    <a href="https://github.com/RobsonGouveia" class="btn btn-outline-dark btn-sm">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
